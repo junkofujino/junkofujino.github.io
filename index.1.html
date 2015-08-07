@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h1>My Portfolio♡</h1>
+    
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Project name</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item next left">
+          <img src="../assets/img/examples/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/img/examples/slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item active left">
+          <img src="../assets/img/examples/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAYAAACHjumMAAAPMElEQVR4Xu3ch4ssVdMH4L4mzDlnxKyYs+jfrpgxKyoiCiJmXRPmcF9qPma/3r6zuzOzW3V3t54GEe7OVPV5zpkfnWaObWxsHB9sBAgQSBA4JmASVJUkQGAmIGAsBAIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAw+0y7sbExfPbZZ8PZZ589nHLKKZvV//vvv+Gff/4Zbr311uHUU09du+vnn38+/P7778OxY8eGqHnDDTcMZ5xxxrb1/vzzz+HTTz8dYr/+/vvv2etiv84777zhpptuGs4999y192WnN0avDz74YDjzzDNPGO9ff/01XHPNNcP555+/du/D4rD2AI/IGwXMPk9kfJg/+uijbavef//9wyWXXLJW1++//3548803t7z3wQcfHC666KKF9eIDHh/EnbbLLrtsuOeee2aBtZ/br7/+Orz88svD8ePHF5aNgLnjjjvWanmYHNYa4BF6k4DZ58ncLWAeeuih4cILL1y5axytPPvss8O///675b3b1Xv33XeHr7/+eqk+55xzzvDYY4/ta8jsFjBx5HXLLbcstX/jFx02h5UHeMTeIGD2eUK/+eab4Z133tk8FYkPxHhbJ2DiKOCll14afvvttxP2dlG9L774Ynj//fdPeG0EW5ye/fDDD7PTq/F29dVXD3feeee+acQp0vPPPz8LxDg6mh7JrBMwh9Fh30APaSEBkzBx8aGaX2d54403Ztc/5ts6AfPWW28N33333cI9ndaLD+GLL744u04z30477bTh4YcfHuJIJbZ4zauvvjr8/PPPm6+J6zJPPfXUcPrpp++rSPSKgJke2a0TMIfZYV9RD1ExAZM8WdMPxaoBE9dz4sMZ26IjgWm9CI0Ij/ERw6KecQTzzDPPbDmSiQvQ119//azXH3/8sSkTF2oXbePXxN+3e138LS58f/jhh5tlVg2Yk+WQvDyOfHkBkzzFewmY8enWfDfjyGh8HWYaHvEhjg/zfIu7RY8++ujCUcapXPSYb3HB9957750dAY1Pxy644ILZEdB8W3SqEuHy5JNPbnsdZy8Bc7IckpdGi/ICJnma1w2YOMWJ6y7jayXXXnvt7Fb3V199tbnX04CJu0xxl2W+xa3o+G/R9uOPPw6vv/765tHO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" style="width: 140px; height: 140px;">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAYAAACHjumMAAAPMElEQVR4Xu3ch4ssVdMH4L4mzDlnxKyYs+jfrpgxKyoiCiJmXRPmcF9qPma/3r6zuzOzW3V3t54GEe7OVPV5zpkfnWaObWxsHB9sBAgQSBA4JmASVJUkQGAmIGAsBAIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAw+0y7sbExfPbZZ8PZZ589nHLKKZvV//vvv+Gff/4Zbr311uHUU09du+vnn38+/P7778OxY8eGqHnDDTcMZ5xxxrb1/vzzz+HTTz8dYr/+/vvv2etiv84777zhpptuGs4999y192WnN0avDz74YDjzzDNPGO9ff/01XHPNNcP555+/du/D4rD2AI/IGwXMPk9kfJg/+uijbavef//9wyWXXLJW1++//3548803t7z3wQcfHC666KKF9eIDHh/EnbbLLrtsuOeee2aBtZ/br7/+Orz88svD8ePHF5aNgLnjjjvWanmYHNYa4BF6k4DZ58ncLWAeeuih4cILL1y5axytPPvss8O///675b3b1Xv33XeHr7/+eqk+55xzzvDYY4/ta8jsFjBx5HXLLbcstX/jFx02h5UHeMTeIGD2eUK/+eab4Z133tk8FYkPxHhbJ2DiKOCll14afvvttxP2dlG9L774Ynj//fdPeG0EW5ye/fDDD7PTq/F29dVXD3feeee+acQp0vPPPz8LxDg6mh7JrBMwh9Fh30APaSEBkzBx8aGaX2d54403Ztc/5ts6AfPWW28N33333cI9ndaLD+GLL744u04z30477bTh4YcfHuJIJbZ4zauvvjr8/PPPm6+J6zJPPfXUcPrpp++rSPSKgJke2a0TMIfZYV9RD1ExAZM8WdMPxaoBE9dz4sMZ26IjgWm9CI0Ij/ERw6KecQTzzDPPbDmSiQvQ119//azXH3/8sSkTF2oXbePXxN+3e138LS58f/jhh5tlVg2Yk+WQvDyOfHkBkzzFewmY8enWfDfjyGh8HWYaHvEhjg/zfIu7RY8++ujCUcapXPSYb3HB9957750dAY1Pxy644ILZEdB8W3SqEuHy5JNPbnsdZy8Bc7IckpdGi/ICJnma1w2YOMWJ6y7jayXXXnvt7Fb3V199tbnX04CJu0xxl2W+xa3o+G/R9uOPPw6vv/765tHO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" style="width: 140px; height: 140px;">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAYAAACHjumMAAAPMElEQVR4Xu3ch4ssVdMH4L4mzDlnxKyYs+jfrpgxKyoiCiJmXRPmcF9qPma/3r6zuzOzW3V3t54GEe7OVPV5zpkfnWaObWxsHB9sBAgQSBA4JmASVJUkQGAmIGAsBAIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAwabQKEyAgYKwBAgTSBARMGq3CBAgIGGuAAIE0AQGTRqswAQICxhogQCBNQMCk0SpMgICAsQYIEEgTEDBptAoTICBgrAECBNIEBEwarcIECAgYa4AAgTQBAZNGqzABAgLGGiBAIE1AwKTRKkyAgICxBggQSBMQMGm0ChMgIGCsAQIE0gQETBqtwgQICBhrgACBNAEBk0arMAECAsYaIEAgTUDApNEqTICAgLEGCBBIExAw+0y7sbExfPbZZ8PZZ589nHLKKZvV//vvv+Gff/4Zbr311uHUU09du+vnn38+/P7778OxY8eGqHnDDTcMZ5xxxrb1/vzzz+HTTz8dYr/+/vvv2etiv84777zhpptuGs4999y192WnN0avDz74YDjzzDNPGO9ff/01XHPNNcP555+/du/D4rD2AI/IGwXMPk9kfJg/+uijbavef//9wyWXXLJW1++//3548803t7z3wQcfHC666KKF9eIDHh/EnbbLLrtsuOeee2aBtZ/br7/+Orz88svD8ePHF5aNgLnjjjvWanmYHNYa4BF6k4DZ58ncLWAeeuih4cILL1y5axytPPvss8O///675b3b1Xv33XeHr7/+eqk+55xzzvDYY4/ta8jsFjBx5HXLLbcstX/jFx02h5UHeMTeIGD2eUK/+eab4Z133tk8FYkPxHhbJ2DiKOCll14afvvttxP2dlG9L774Ynj//fdPeG0EW5ye/fDDD7PTq/F29dVXD3feeee+acQp0vPPPz8LxDg6mh7JrBMwh9Fh30APaSEBkzBx8aGaX2d54403Ztc/5ts6AfPWW28N33333cI9ndaLD+GLL744u04z30477bTh4YcfHuJIJbZ4zauvvjr8/PPPm6+J6zJPPfXUcPrpp++rSPSKgJke2a0TMIfZYV9RD1ExAZM8WdMPxaoBE9dz4sMZ26IjgWm9CI0Ij/ERw6KecQTzzDPPbDmSiQvQ119//azXH3/8sSkTF2oXbePXxN+3e138LS58f/jhh5tlVg2Yk+WQvDyOfHkBkzzFewmY8enWfDfjyGh8HWYaHvEhjg/zfIu7RY8++ujCUcapXPSYb3HB9957750dAY1Pxy644ILZEdB8W3SqEuHy5JNPbnsdZy8Bc7IckpdGi/ICJnma1w2YOMWJ6y7jayXXXnvt7Fb3V199tbnX04CJu0xxl2W+xa3o+G/R9uOPPw6vv/765tHO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" style="width: 140px; height: 140px;">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="../assets/js/holder/holder.js"></script>
+  
+
+</body>
+</html>
